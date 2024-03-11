@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Calculator</title>
+    <script src="https://kit.fontawesome.com/80c5176f5b.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="james">
+            <div class="john">
+                <i class="fa-solid fa-calculator"></i>
+                <p>Calculator</p>
+            </div>
+            <div class="peter">
+                <i class="fa-solid fa-minus"></i>
+                <i class="fa-regular fa-square"></i>
+                <i class="fa-solid fa-xmark"></i>
+            </div>
+        </div>
+        <div class="james">
+            <div class="john">
+                <i class="fa-solid fa-bars"></i>
+                <h3>Standard</h3>
+            </div>
+            <div class="matt">
+                <i class="fa-regular fa-clock"></i>
+            </div>
+        </div>
+        <div class="samson">
+            <input type="text" id="display">
+        </div>
+        <div class="moses">
+            <button onclick="appendToDisplay('%')">%</button>
+            <button onclick="clearDisplay()">CE</button>
+            <button>C</button>
+            <button>
+                <i class="fa-solid fa-delete-left"></i>
+            </button>
+            <button>1/x</button>
+            <button>x2</button>
+            <button>
+                <i class="fa-solid fa-square-root-variable"></i>
+            </button>
+            <button onclick="appendToDisplay('/')">/</button>
+            <button onclick="appendToDisplay('7')" class="cway">7</button>
+            <button onclick="appendToDisplay('8')" class="cway">8</button>
+            <button onclick="appendToDisplay('9')" class="cway">9</button>
+            <button onclick="appendToDisplay('*')">X</button>
+            <button onclick="appendToDisplay('4')" class="cway">4</button>
+            <button onclick="appendToDisplay('5')" class="cway">5</button>
+            <button onclick="appendToDisplay('6')" class="cway">6</button>
+            <button onclick="appendToDisplay('-')">-</button>
+            <button onclick="appendToDisplay('1')" class="cway">1</button>
+            <button onclick="appendToDisplay('2')" class="cway">2</button>
+            <button onclick="appendToDisplay('3')" class="cway">3</button>
+            <button onclick="appendToDisplay('+')">+</button>
+            <button onclick="appendToDisplay('00')" class="cway">00</button>
+            <button onclick="appendToDisplay('0')" class="cway">0</button>
+            <button onclick="appendToDisplay('.')" class="cway">.</button>
+            <button onclick="calculate()" id="result">=</button>
+        </div>
+    </div>
+</body>
+
+    <script>
+        let display = document.getElementById("display")
+
+        function appendToDisplay(input){
+            display.value += input;
+        }
+
+        function clearDisplay(){
+            display.value = "";
+        }
+
+        function calculate(){
+            display.value = eval(display.value)
+        }
+
+
+
+    </script>
+
+
+
+
+</html>

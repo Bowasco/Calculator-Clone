@@ -1,0 +1,75 @@
+.container{
+    width: 25%;
+    margin: 0 auto;
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    background-color: lightgray;
+    padding: 0 0 10px 0;
+}
+.james{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 0 0 20px;
+}
+.john{
+    display: flex;
+}
+.john i{
+    align-self: center;
+    padding-right: 10px;
+}
+.peter{
+    align-self: center;
+}
+.peter i{
+    padding: 17px;
+}
+.peter i:hover{
+    background-color: rgb(161, 160, 160);
+}
+.matt{
+    align-self: center;
+    margin-right: 15px;
+}
+.samson{
+    width: 95%;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+.samson input{
+    width: 100%;
+    border: none;
+    padding: 10px 0;
+    font-size: 20px;
+}
+.samson input:focus-within{
+    outline: none;
+}
+.moses{
+    width: 95%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 24% 24% 24% 24%;
+    gap: 5px;
+}
+.moses button{
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+.moses button:hover{
+    background-color: lightgray;
+}
+#result{
+    background-color: blue;
+    border: none;
+}
+#result:hover{
+    background-color: rgb(70, 70, 233);
+}
+.cway{
+    background-color: #fff;
+}
+.cway:hover{
+    background-color: lightgray;
+}
